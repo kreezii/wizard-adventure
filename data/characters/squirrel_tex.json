@@ -1,0 +1,15 @@
+{
+	"width": 128,
+	"height": 128,
+	"imagePath": "squirrel_tex.png",
+	"name": "squirrel",
+	"SubTexture": [
+		{
+			"name": "ardilla.png",
+			"x": 1,
+			"y": 1,
+			"width": 105,
+			"height": 95
+		}
+	]
+}

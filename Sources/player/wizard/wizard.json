@@ -1,0 +1,324 @@
+{
+    "name": "wizard",
+    "nodes": [
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Right-Arm.png",
+            "node_path": "Right-Arm.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                126,
+                125
+            ],
+            "resource_path": "sprites/Right-Arm.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": 0
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Right-Forearm.png",
+            "node_path": "Right-Forearm.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                118,
+                82
+            ],
+            "resource_path": "sprites/Right-Forearm.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -1
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Head.png",
+            "node_path": "Head.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                139,
+                31
+            ],
+            "resource_path": "sprites/Head.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -2
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Body.png",
+            "node_path": "Body.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                120,
+                69
+            ],
+            "resource_path": "sprites/Body.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -3
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Skirt.png",
+            "node_path": "Skirt.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                95,
+                134
+            ],
+            "resource_path": "sprites/Skirt.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -4
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Left-Arm.png",
+            "node_path": "Left-Arm.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                176,
+                120
+            ],
+            "resource_path": "sprites/Left-Arm.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -5
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Left-Forearm.png",
+            "node_path": "Left-Forearm.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                165,
+                78
+            ],
+            "resource_path": "sprites/Left-Forearm.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -6
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Boot-Right.png",
+            "node_path": "Boot-Right.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                104,
+                209
+            ],
+            "resource_path": "sprites/Boot-Right.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -7
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Boot-Left.png",
+            "node_path": "Boot-Left.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                155,
+                207
+            ],
+            "resource_path": "sprites/Boot-Left.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -8
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Leg-Right.png",
+            "node_path": "Leg-Right.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                112,
+                149
+            ],
+            "resource_path": "sprites/Leg-Right.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -9
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Leg-Left.png",
+            "node_path": "Leg-Left.png",
+            "offset": [
+                -160,
+                160
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                150,
+                148
+            ],
+            "resource_path": "sprites/Leg-Left.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -10
+        }
+    ]
+}

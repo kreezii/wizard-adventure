@@ -1,0 +1,515 @@
+{
+	"frames": {
+		"baston.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 128,
+				"h": 200
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 128,
+				"h": 200
+			},
+			"sourceSize": {
+				"w": 128,
+				"h": 200
+			}
+		},
+		"baston-icon.png": {
+			"frame": {
+				"x": 131,
+				"y": 1,
+				"w": 128,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 128,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 128,
+				"h": 128
+			}
+		},
+		"book.png": {
+			"frame": {
+				"x": 261,
+				"y": 1,
+				"w": 97,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 97,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 97,
+				"h": 100
+			}
+		},
+		"bottle-empty.png": {
+			"frame": {
+				"x": 360,
+				"y": 1,
+				"w": 76,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 76,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 76,
+				"h": 100
+			}
+		},
+		"bottle-potion.png": {
+			"frame": {
+				"x": 438,
+				"y": 1,
+				"w": 76,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 76,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 76,
+				"h": 100
+			}
+		},
+		"bottle-potion2.png": {
+			"frame": {
+				"x": 516,
+				"y": 1,
+				"w": 76,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 76,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 76,
+				"h": 100
+			}
+		},
+		"bottle-water.png": {
+			"frame": {
+				"x": 594,
+				"y": 1,
+				"w": 76,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 76,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 76,
+				"h": 100
+			}
+		},
+		"fairy-portrait.png": {
+			"frame": {
+				"x": 672,
+				"y": 1,
+				"w": 128,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 128,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 128,
+				"h": 128
+			}
+		},
+		"fire.png": {
+			"frame": {
+				"x": 131,
+				"y": 131,
+				"w": 213,
+				"h": 123
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 213,
+				"h": 123
+			},
+			"sourceSize": {
+				"w": 213,
+				"h": 123
+			}
+		},
+		"flowers.png": {
+			"frame": {
+				"x": 346,
+				"y": 131,
+				"w": 180,
+				"h": 187
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 180,
+				"h": 187
+			},
+			"sourceSize": {
+				"w": 180,
+				"h": 187
+			}
+		},
+		"food.png": {
+			"frame": {
+				"x": 802,
+				"y": 1,
+				"w": 94,
+				"h": 64
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 94,
+				"h": 64
+			},
+			"sourceSize": {
+				"w": 94,
+				"h": 64
+			}
+		},
+		"inventory-background.png": {
+			"frame": {
+				"x": 1,
+				"y": 320,
+				"w": 523,
+				"h": 402
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 523,
+				"h": 402
+			},
+			"sourceSize": {
+				"w": 523,
+				"h": 402
+			}
+		},
+		"inventory-icon.png": {
+			"frame": {
+				"x": 802,
+				"y": 67,
+				"w": 114,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 114,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 114,
+				"h": 100
+			}
+		},
+		"mushrooms.png": {
+			"frame": {
+				"x": 528,
+				"y": 169,
+				"w": 84,
+				"h": 106
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 84,
+				"h": 106
+			},
+			"sourceSize": {
+				"w": 84,
+				"h": 106
+			}
+		},
+		"player-portrait.png": {
+			"frame": {
+				"x": 614,
+				"y": 169,
+				"w": 128,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 128,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 128,
+				"h": 128
+			}
+		},
+		"sheet0.png": {
+			"frame": {
+				"x": 744,
+				"y": 169,
+				"w": 92,
+				"h": 76
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 92,
+				"h": 76
+			},
+			"sourceSize": {
+				"w": 92,
+				"h": 76
+			}
+		},
+		"sheet1.png": {
+			"frame": {
+				"x": 744,
+				"y": 247,
+				"w": 150,
+				"h": 79
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 150,
+				"h": 79
+			},
+			"sourceSize": {
+				"w": 150,
+				"h": 79
+			}
+		},
+		"sheet2.png": {
+			"frame": {
+				"x": 526,
+				"y": 328,
+				"w": 228,
+				"h": 80
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 228,
+				"h": 80
+			},
+			"sourceSize": {
+				"w": 228,
+				"h": 80
+			}
+		},
+		"sheet3.png": {
+			"frame": {
+				"x": 756,
+				"y": 328,
+				"w": 100,
+				"h": 115
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 100,
+				"h": 115
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 115
+			}
+		},
+		"sheet4.png": {
+			"frame": {
+				"x": 526,
+				"y": 445,
+				"w": 161,
+				"h": 77
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 161,
+				"h": 77
+			},
+			"sourceSize": {
+				"w": 161,
+				"h": 77
+			}
+		},
+		"squirrel-portrait.png": {
+			"frame": {
+				"x": 689,
+				"y": 445,
+				"w": 128,
+				"h": 128
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 128,
+				"h": 128
+			},
+			"sourceSize": {
+				"w": 128,
+				"h": 128
+			}
+		},
+		"treehouse.png": {
+			"frame": {
+				"x": 918,
+				"y": 1,
+				"w": 429,
+				"h": 432
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 429,
+				"h": 432
+			},
+			"sourceSize": {
+				"w": 429,
+				"h": 432
+			}
+		},
+		"trunkplant.png": {
+			"frame": {
+				"x": 858,
+				"y": 435,
+				"w": 236,
+				"h": 215
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 236,
+				"h": 215
+			},
+			"sourceSize": {
+				"w": 236,
+				"h": 215
+			}
+		},
+		"undergrowth.png": {
+			"frame": {
+				"x": 526,
+				"y": 652,
+				"w": 373,
+				"h": 368
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 373,
+				"h": 368
+			},
+			"sourceSize": {
+				"w": 373,
+				"h": 368
+			}
+		},
+		"water.png": {
+			"frame": {
+				"x": 1096,
+				"y": 435,
+				"w": 183,
+				"h": 42
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 183,
+				"h": 42
+			},
+			"sourceSize": {
+				"w": 183,
+				"h": 42
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1348,
+			"h": 1021
+		},
+		"scale": "1"
+	}
+}

@@ -1,0 +1,843 @@
+{
+  "Settings": {
+    "Languages": [
+      "English"
+    ],
+    "Text": {
+      "Style": {
+        "font": {
+          "name": "Courgette Regular",
+          "size": 55
+        },
+        "align": "center"
+      },
+      "Button": {
+        "font": {
+          "name": "Courgette Regular",
+          "size": 65
+        },
+        "align": "center"
+      },
+      "Position": "bottom",
+      "Size": "fourth",
+      "Title": {
+        "font": {
+          "name": "Courgette Regular Green",
+          "size": 55
+        },
+        "align": "center"
+      }
+    },
+    "TitleScreen": {
+      "Background": "title.png",
+      "Music": "WoodLand"
+    },
+    "FirstScene": "Cave",
+    "HoldTime": 0.1,
+    "Inventory": {
+      "Position": "top-right",
+      "Background": "inventory-background.png",
+      "Icon": "inventory-icon.png",
+      "Border": 15
+    }
+  },
+  "Texts": {
+    "Title": [
+      "The Wizard\nand The Squirrel"
+    ],
+    "NewGame": [
+      "New game"
+    ],
+    "Continue": [
+      "Continue"
+    ],
+    "Options": [
+      "Options"
+    ],
+    "Help": [
+      "Help"
+    ],
+    "Credits": [
+      "Credits"
+    ],
+    "Back": [
+      "Back"
+    ],
+    "Warning": [
+      "Warning\nThe adventure progress will be deleted"
+    ],
+    "Yes": [
+      "Yes"
+    ],
+    "No": [
+      "No"
+    ],
+    "NotUsable": [
+      "It doesn't work"
+    ],
+    "NoDescription": [
+      "I don't know what to say"
+    ]
+  },
+  "Player": {
+    "Avatar": "player-portrait.png",
+    "Texture": "data/characters/magician_tex.png",
+    "Json": "data/characters/magician_tex.json",
+    "Skeleton": "data/characters/magician_ske.json",
+    "Armature": "Armature",
+    "Position": [
+      300,
+      500
+    ]
+  },
+  "Objects": [
+    {
+      "Texture": "bottle-empty.png",
+      "Name": "bottle-empty",
+      "Position": [
+        618,
+        530
+      ],
+      "Description": [
+        "It's an empty bottle. Useful to make potions"
+      ],
+      "Combine": {
+        "With": "water",
+        "Puzzle": "fill-bottle"
+      },
+      "Take": true
+    },
+    {
+      "Texture": "mushrooms.png",
+      "Name": "mushrooms",
+      "Position": [
+        180,
+        512
+      ],
+      "Take": true,
+      "Description": [
+        "Mushrooms, they are useful to make potions"
+      ]
+    },
+    {
+      "Texture": "fire.png",
+      "Name": "fire",
+      "Position": [
+        468,
+        539
+      ],
+      "Layer": "Bottom",
+      "Lock": true,
+      "Description": [
+        "It was a cold night"
+      ]
+    },
+    {
+      "Texture": "sheet0.png",
+      "Name": "sheet0",
+      "Position": [
+        395,
+        418
+      ],
+      "Layer": "Bottom",
+      "Take": true,
+      "Description": [
+        "It's a page of my book of spells."
+      ]
+    },
+    {
+      "Name": "cave-exit",
+      "Area": [
+        170,
+        320,
+        144,
+        293,
+        161,
+        233,
+        175,
+        184,
+        194,
+        160,
+        228,
+        122,
+        252,
+        93,
+        276,
+        80,
+        305,
+        73,
+        336,
+        80,
+        363,
+        77,
+        402,
+        68,
+        422,
+        68,
+        434,
+        83,
+        443,
+        100,
+        452,
+        110,
+        467,
+        132,
+        478,
+        148,
+        496,
+        169,
+        504,
+        192,
+        519,
+        203,
+        543,
+        213,
+        573,
+        231,
+        581,
+        252,
+        587,
+        288,
+        581,
+        318,
+        564,
+        334,
+        529,
+        345,
+        490,
+        339,
+        420,
+        339,
+        360,
+        341,
+        279,
+        335,
+        255,
+        328,
+        223,
+        326,
+        170,
+        320
+      ],
+      "Description": [
+        "Goes outside"
+      ],
+      "Door": {
+        "To": "Cave Outside",
+        "Player": [
+          390,
+          315
+        ]
+      }
+    },
+    {
+      "Texture": "water.png",
+      "Name": "water",
+      "Position": [
+        272,
+        435
+      ],
+      "Layer": "Bottom",
+      "Description": [
+        "Water is the basic component to make a potion"
+      ]
+    },
+    {
+      "Texture": "food.png",
+      "Name": "food",
+      "Position": [
+        478,
+        450
+      ],
+      "Layer": "Bottom"
+    },
+    {
+      "Texture": "sheet1.png",
+      "Name": "sheet1",
+      "Position": [
+        808,
+        536
+      ],
+      "Description": [
+        "It's a page of my book of spells."
+      ],
+      "Layer": "Bottom"
+    },
+    {
+      "Name": "cave-enter",
+      "Area": [
+        277,
+        282,
+        279,
+        254,
+        286,
+        223,
+        278,
+        194,
+        288,
+        178,
+        299,
+        160,
+        304,
+        149,
+        323,
+        137,
+        348,
+        129,
+        373,
+        125,
+        387,
+        128,
+        410,
+        120,
+        419,
+        120,
+        433,
+        128,
+        460,
+        135,
+        464,
+        146,
+        479,
+        161,
+        493,
+        176,
+        499,
+        198,
+        503,
+        212,
+        515,
+        226,
+        528,
+        246,
+        527,
+        266,
+        525,
+        292,
+        507,
+        299,
+        476,
+        297,
+        453,
+        286,
+        425,
+        280,
+        395,
+        280,
+        373,
+        282,
+        350,
+        286,
+        318,
+        289,
+        296,
+        290,
+        277,
+        282
+      ],
+      "Description": [],
+      "Door": {
+        "To": "Cave",
+        "Player": [
+          340,
+          380
+        ]
+      }
+    },
+    {
+      "Texture": "bottle-water.png",
+      "Name": "bottle-water",
+      "Description": [
+        "There is water inside"
+      ]
+    },
+    {
+      "Texture": "baston.png",
+      "Name": "Baston",
+      "Description": [
+        "A stick"
+      ],
+      "Position": [
+        700,
+        500
+      ],
+      "Take": true,
+      "Icon": "baston-icon.png"
+    }
+  ],
+  "Scenes": [
+    {
+      "Name": "Cave",
+      "Background": "caveinside.png",
+      "WalkArea": [
+        50,
+        537,
+        60,
+        530,
+        82,
+        531,
+        107,
+        522,
+        145,
+        525,
+        168,
+        521,
+        193,
+        517,
+        208,
+        514,
+        230,
+        505,
+        237,
+        494,
+        243,
+        479,
+        237,
+        464,
+        234,
+        454,
+        226,
+        449,
+        202,
+        442,
+        190,
+        434,
+        207,
+        418,
+        207,
+        404,
+        204,
+        398,
+        201,
+        385,
+        197,
+        373,
+        183,
+        366,
+        177,
+        358,
+        184,
+        345,
+        199,
+        338,
+        233,
+        344,
+        273,
+        359,
+        301,
+        358,
+        341,
+        358,
+        408,
+        359,
+        449,
+        360,
+        521,
+        362,
+        558,
+        357,
+        566,
+        358,
+        578,
+        365,
+        589,
+        371,
+        599,
+        378,
+        614,
+        386,
+        634,
+        390,
+        652,
+        393,
+        672,
+        391,
+        694,
+        390,
+        699,
+        398,
+        694,
+        402,
+        679,
+        409,
+        656,
+        411,
+        648,
+        415,
+        634,
+        420,
+        622,
+        428,
+        619,
+        444,
+        614,
+        455,
+        602,
+        462,
+        596,
+        470,
+        600,
+        479,
+        612,
+        488,
+        618,
+        494,
+        628,
+        500,
+        646,
+        504,
+        653,
+        512,
+        663,
+        518,
+        683,
+        527,
+        702,
+        532,
+        717,
+        533,
+        729,
+        529,
+        747,
+        536,
+        731,
+        538,
+        702,
+        539,
+        627,
+        538,
+        497,
+        538,
+        368,
+        538,
+        267,
+        537,
+        160,
+        538,
+        96,
+        538,
+        61,
+        538,
+        50,
+        537
+      ],
+      "Obstacles": [
+        [
+          364,
+          461,
+          385,
+          451,
+          399,
+          448,
+          405,
+          438,
+          422,
+          431,
+          437,
+          421,
+          453,
+          416,
+          472,
+          418,
+          492,
+          425,
+          509,
+          429,
+          530,
+          430,
+          547,
+          433,
+          557,
+          444,
+          569,
+          455,
+          574,
+          471,
+          574,
+          497,
+          559,
+          512,
+          523,
+          526,
+          499,
+          528,
+          469,
+          532,
+          446,
+          531,
+          416,
+          530,
+          395,
+          521,
+          377,
+          506,
+          366,
+          489,
+          357,
+          477,
+          364,
+          461
+        ]
+      ],
+      "Objects": [
+        "bottle-empty",
+        "bottle-empty",
+        "mushrooms",
+        "fire",
+        "sheet0",
+        "cave-exit",
+        "Baston"
+      ],
+      "Foreground": "caveinside-foreground.png",
+      "Music": "WoodLand"
+    },
+    {
+      "Name": "Cave Outside",
+      "Background": "cave.png",
+      "WalkArea": [
+        153,
+        402,
+        171,
+        394,
+        182,
+        375,
+        212,
+        359,
+        236,
+        346,
+        251,
+        336,
+        280,
+        335,
+        308,
+        331,
+        315,
+        316,
+        323,
+        300,
+        343,
+        296,
+        366,
+        298,
+        388,
+        295,
+        411,
+        290,
+        440,
+        293,
+        454,
+        307,
+        459,
+        324,
+        482,
+        341,
+        496,
+        346,
+        532,
+        349,
+        558,
+        359,
+        573,
+        369,
+        582,
+        390,
+        593,
+        413,
+        607,
+        433,
+        645,
+        434,
+        671,
+        436,
+        702,
+        442,
+        745,
+        436,
+        780,
+        427,
+        791,
+        430,
+        824,
+        443,
+        855,
+        443,
+        899,
+        451,
+        921,
+        463,
+        925,
+        489,
+        927,
+        507,
+        911,
+        521,
+        883,
+        527,
+        844,
+        528,
+        788,
+        524,
+        750,
+        525,
+        699,
+        530,
+        641,
+        530,
+        587,
+        524,
+        523,
+        524,
+        477,
+        526,
+        426,
+        529,
+        388,
+        529,
+        313,
+        531,
+        232,
+        538,
+        179,
+        532,
+        132,
+        529,
+        58,
+        537,
+        23,
+        534,
+        9,
+        518,
+        5,
+        486,
+        10,
+        449,
+        32,
+        434,
+        70,
+        433,
+        95,
+        422,
+        122,
+        418,
+        137,
+        418,
+        153,
+        402
+      ],
+      "Objects": [
+        "water",
+        "food",
+        "sheet1",
+        "cave-enter"
+      ],
+      "Foreground": "cave-foreground.png"
+    }
+  ],
+  "Puzzles": [
+    {
+      "Name": "fill-bottle",
+      "Remove": {
+        "Object": "bottle-empty"
+      },
+      "Add": {
+        "Inventory": "bottle-water",
+        "NPC": {
+          "Name": "Fairy",
+          "Scene": "Cave Outside"
+        }
+      },
+      "Say": [
+        "Done... What happened?"
+      ]
+    }
+  ],
+  "Sources": {
+    "Filename": "game",
+    "Folders": {
+      "Main": "data/",
+      "Audio": "data/audio/",
+      "Player": "data/characters/",
+      "NPC": "data/characters/"
+    },
+    "Images": [
+      "baston.png",
+      "baston-icon.png",
+      "book.png",
+      "bottle-empty.png",
+      "bottle-potion.png",
+      "bottle-potion2.png",
+      "bottle-water.png",
+      "fairy-portrait.png",
+      "fire.png",
+      "flowers.png",
+      "food.png",
+      "inventory-background.png",
+      "inventory-icon.png",
+      "mushrooms.png",
+      "player-portrait.png",
+      "sheet0.png",
+      "sheet1.png",
+      "sheet2.png",
+      "sheet3.png",
+      "sheet4.png",
+      "squirrel-portrait.png",
+      "treehouse.png",
+      "trunkplant.png",
+      "undergrowth.png",
+      "water.png",
+      "cave.png",
+      "cave-foreground.png",
+      "caveinside.png",
+      "caveinside-foreground.png",
+      "field.png",
+      "field-foreground.png",
+      "forest.png",
+      "forest-foreground.png",
+      "river.png",
+      "river-foreground.png",
+      "title.png"
+    ],
+    "Fonts": [
+      "Courgette Regular",
+      "Courgette Regular Green"
+    ],
+    "Audio": [
+      "Woodland Fantasy.mp3"
+    ]
+  },
+  "Characters": [
+    {
+      "Name": "Fairy",
+      "Description": [
+        "What's doing a fairy here?"
+      ],
+      "Avatar": "fairy-portrait.png",
+      "Texture": "data/characters/fairy_tex.png",
+      "Json": "data/characters/fairy_tex.json",
+      "Skeleton": "data/characters/fairy_ske.json",
+      "Armature": "Fairy",
+      "Position": [
+        280,
+        380
+      ],
+      "Size": 0.5,
+      "Mirror": true,
+      "Dialogue": "Fairy-dialog"
+    }
+  ],
+  "Dialogues": [
+    {
+      "Name": "Fairy-dialog",
+      "DefaultBranch": "undefined",
+      "Branches": []
+    }
+  ],
+  "Music": [
+    {
+      "Name": "WoodLand",
+      "Src": "data/audio/Woodland Fantasy.mp3",
+      "Folder": "data/audio/",
+      "File": "Woodland Fantasy.mp3"
+    }
+  ]
+}

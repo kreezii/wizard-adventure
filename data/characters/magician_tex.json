@@ -1,0 +1,85 @@
+{
+	"width": 512,
+	"height": 512,
+	"imagePath": "magician_tex.png",
+	"name": "magician",
+	"SubTexture": [
+		{
+			"name": "Leg-Right.png.002",
+			"x": 472,
+			"y": 1,
+			"width": 38,
+			"height": 79
+		},
+		{
+			"name": "Leg-Left.png.002",
+			"x": 426,
+			"y": 1,
+			"width": 45,
+			"height": 79
+		},
+		{
+			"name": "Boot-Left.png.002",
+			"x": 243,
+			"y": 1,
+			"width": 54,
+			"height": 89
+		},
+		{
+			"name": "Boot-Right.png.002",
+			"x": 187,
+			"y": 1,
+			"width": 55,
+			"height": 89
+		},
+		{
+			"name": "Left-Forearm.png.002",
+			"x": 298,
+			"y": 58,
+			"width": 37,
+			"height": 61
+		},
+		{
+			"name": "Left-Arm.png.002",
+			"x": 365,
+			"y": 1,
+			"width": 60,
+			"height": 60
+		},
+		{
+			"name": "Skirt.png.002",
+			"x": 1,
+			"y": 1,
+			"width": 116,
+			"height": 156
+		},
+		{
+			"name": "Body.png.002",
+			"x": 118,
+			"y": 1,
+			"width": 68,
+			"height": 84
+		},
+		{
+			"name": "Head.png.002",
+			"x": 426,
+			"y": 81,
+			"width": 39,
+			"height": 53
+		},
+		{
+			"name": "Right-Forearm.png.002",
+			"x": 365,
+			"y": 62,
+			"width": 37,
+			"height": 61
+		},
+		{
+			"name": "Right-Arm.png.002",
+			"x": 298,
+			"y": 1,
+			"width": 66,
+			"height": 56
+		}
+	]
+}

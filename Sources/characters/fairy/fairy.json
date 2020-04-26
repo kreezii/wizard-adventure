@@ -1,0 +1,179 @@
+{
+    "name": "fairy",
+    "nodes": [
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Body.png",
+            "node_path": "Body.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                53,
+                69
+            ],
+            "resource_path": "sprites/Body.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": 0
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Head.png",
+            "node_path": "Head.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                68,
+                21
+            ],
+            "resource_path": "sprites/Head.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -1
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Legs.png",
+            "node_path": "Legs.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                71,
+                112
+            ],
+            "resource_path": "sprites/Legs.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -2
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Arm Right.png",
+            "node_path": "Arm Right.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                68,
+                36
+            ],
+            "resource_path": "sprites/Arm Right.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -3
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Arm Left.png",
+            "node_path": "Arm Left.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                106,
+                85
+            ],
+            "resource_path": "sprites/Arm Left.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -4
+        },
+        {
+            "children": [],
+            "frame_index": 0,
+            "name": "Wings.png",
+            "node_path": "Wings.png",
+            "offset": [
+                -94,
+                112
+            ],
+            "opacity": 1.0,
+            "pivot_offset": [
+                0.0,
+                0.0
+            ],
+            "position": [
+                0,
+                0
+            ],
+            "resource_path": "sprites/Wings.png",
+            "rotation": 0.0,
+            "scale": [
+                1.0,
+                1.0
+            ],
+            "tiles_x": 1,
+            "tiles_y": 1,
+            "type": "SPRITE",
+            "z": -5
+        }
+    ]
+}

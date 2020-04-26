@@ -1,0 +1,50 @@
+{
+	"width": 512,
+	"height": 512,
+	"imagePath": "fairy_tex.png",
+	"name": "fairy",
+	"SubTexture": [
+		{
+			"name": "Arm Right.png",
+			"x": 372,
+			"y": 1,
+			"width": 19,
+			"height": 46
+		},
+		{
+			"name": "Wings.png",
+			"x": 1,
+			"y": 1,
+			"width": 188,
+			"height": 143
+		},
+		{
+			"name": "Arm Left.png",
+			"x": 353,
+			"y": 1,
+			"width": 18,
+			"height": 51
+		},
+		{
+			"name": "Legs.png",
+			"x": 266,
+			"y": 1,
+			"width": 32,
+			"height": 112
+		},
+		{
+			"name": "Head.png",
+			"x": 299,
+			"y": 1,
+			"width": 53,
+			"height": 54
+		},
+		{
+			"name": "Body.png",
+			"x": 190,
+			"y": 1,
+			"width": 75,
+			"height": 116
+		}
+	]
+}
