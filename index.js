@@ -9,6 +9,7 @@ var config={
   files:[
     //Add the path to the atlas JSONs files, the fonts and the JSON generated with the JSGAM Editor
     'data/imgs/spritesheet.json',
+    'data/cutscenes/cutscenes.json',
     'data/backgrounds/backgrounds.json',
     'data/fonts/courgette.fnt',
     'data/fonts/courgette-regular-blue.fnt',

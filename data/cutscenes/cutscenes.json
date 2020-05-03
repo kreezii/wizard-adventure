@@ -1,0 +1,75 @@
+{
+	"frames": {
+		"intro0.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 960,
+				"h": 540
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 960,
+				"h": 540
+			},
+			"sourceSize": {
+				"w": 960,
+				"h": 540
+			}
+		},
+		"intro1.png": {
+			"frame": {
+				"x": 1,
+				"y": 543,
+				"w": 960,
+				"h": 540
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 960,
+				"h": 540
+			},
+			"sourceSize": {
+				"w": 960,
+				"h": 540
+			}
+		},
+		"intro2.png": {
+			"frame": {
+				"x": 963,
+				"y": 1,
+				"w": 960,
+				"h": 540
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 960,
+				"h": 540
+			},
+			"sourceSize": {
+				"w": 960,
+				"h": 540
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "cutscenes.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1924,
+			"h": 1084
+		},
+		"scale": "1"
+	}
+}

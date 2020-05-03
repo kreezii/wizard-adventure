@@ -1,7 +1,8 @@
 {
   "Settings": {
     "Languages": [
-      "English"
+      "English",
+      "Español"
     ],
     "Text": {
       "Style": {
@@ -43,40 +44,52 @@
   },
   "Texts": {
     "Title": [
-      "The Wizard\nand The Squirrel"
+      "The Wizard\nand The Squirrel",
+      "El Mago\ny La Ardilla"
     ],
     "NewGame": [
-      "New game"
+      "New game",
+      "Juego nuevo"
     ],
     "Continue": [
-      "Continue"
+      "Continue",
+      "Continuar"
     ],
-    "Options": [
-      "Options"
+    "Language": [
+      "Language",
+      "Idioma"
     ],
     "Help": [
-      "Help"
+      "Help",
+      "Ayuda"
     ],
     "Credits": [
-      "Credits"
+      "Credits",
+      "Créditos"
     ],
     "Back": [
-      "Back"
+      "Back",
+      "Volver"
     ],
     "Warning": [
-      "Warning\nThe adventure progress will be deleted"
+      "Warning!\nYou'll lose your game progress.",
+      "¡Aviso!\nPerderás tus avances."
     ],
     "Yes": [
-      "Yes"
+      "Yes",
+      "Sí"
     ],
     "No": [
+      "No",
       "No"
     ],
     "NotUsable": [
-      "It doesn't work"
+      "It doesn't work",
+      "No funciona"
     ],
     "NoDescription": [
-      "I don't know what to say"
+      "I don't know what to say",
+      "No sé qué decir"
     ]
   },
   "Player": {
@@ -261,7 +274,8 @@
       "Description": [
         "It's a page of my book of spells."
       ],
-      "Layer": "Bottom"
+      "Layer": "Bottom",
+      "Take": true
     },
     {
       "Name": "cave-enter",
@@ -335,7 +349,9 @@
         277,
         282
       ],
-      "Description": [],
+      "Description": [
+        ""
+      ],
       "Door": {
         "To": "Cave",
         "Player": [
@@ -353,7 +369,7 @@
     },
     {
       "Texture": "baston.png",
-      "Name": "Baston",
+      "Name": "baston",
       "Description": [
         "A stick"
       ],
@@ -361,8 +377,378 @@
         700,
         500
       ],
-      "Take": true,
-      "Icon": "baston-icon.png"
+      "Take": true
+    },
+    {
+      "Name": "Cave-To-Forest",
+      "Area": [
+        915,
+        436,
+        860,
+        414,
+        853,
+        376,
+        850,
+        295,
+        849,
+        225,
+        881,
+        167,
+        914,
+        148,
+        945,
+        119,
+        960,
+        180,
+        955,
+        232,
+        952,
+        290,
+        956,
+        359,
+        960,
+        419,
+        958,
+        469,
+        939,
+        460,
+        915,
+        436
+      ],
+      "Description": [
+        "Goes to the forest"
+      ],
+      "Door": {
+        "To": "Forest",
+        "Player": [
+          174,
+          442
+        ]
+      }
+    },
+    {
+      "Texture": "flowers.png",
+      "Name": "flowers",
+      "Position": [
+        435,
+        426
+      ],
+      "Layer": "Bottom"
+    },
+    {
+      "Texture": "sheet2.png",
+      "Name": "sheet2",
+      "Position": [
+        414,
+        497
+      ],
+      "Take": true
+    },
+    {
+      "Name": "To-River",
+      "Area": [
+        878,
+        487,
+        878,
+        380,
+        879,
+        334,
+        885,
+        240,
+        894,
+        200,
+        921,
+        179,
+        957,
+        164,
+        955,
+        253,
+        956,
+        321,
+        957,
+        351,
+        954,
+        422,
+        958,
+        500,
+        942,
+        526,
+        878,
+        487
+      ],
+      "Description": [],
+      "Door": {
+        "To": "River",
+        "Player": [
+          138,
+          310
+        ]
+      }
+    },
+    {
+      "Name": "To-Cave",
+      "Area": [
+        4,
+        109,
+        79,
+        145,
+        78,
+        377,
+        74,
+        449,
+        45,
+        498,
+        9,
+        533,
+        9,
+        355,
+        10,
+        291,
+        6,
+        202,
+        2,
+        151,
+        4,
+        109
+      ],
+      "Description": [
+        ""
+      ],
+      "Door": {
+        "To": "Cave Outside",
+        "Player": [
+          800,
+          455
+        ]
+      }
+    },
+    {
+      "Name": "trunk",
+      "Area": [
+        566,
+        466,
+        602,
+        440,
+        634,
+        409,
+        663,
+        398,
+        718,
+        396,
+        748,
+        400,
+        781,
+        400,
+        805,
+        408,
+        824,
+        422,
+        858,
+        444,
+        875,
+        465,
+        869,
+        486,
+        778,
+        501,
+        738,
+        510,
+        683,
+        505,
+        626,
+        480,
+        566,
+        466
+      ],
+      "Description": [
+        ""
+      ]
+    },
+    {
+      "Texture": "sheet3.png",
+      "Name": "sheet3",
+      "Position": [
+        760,
+        506
+      ]
+    },
+    {
+      "Texture": "undergrowth.png",
+      "Name": "undergrowth",
+      "Position": [
+        507,
+        491
+      ],
+      "Use": "remove-undergrowth"
+    },
+    {
+      "Name": "To-Field",
+      "Area": [
+        868,
+        132,
+        908,
+        94,
+        941,
+        85,
+        952,
+        119,
+        951,
+        300,
+        959,
+        370,
+        960,
+        430,
+        944,
+        491,
+        889,
+        473,
+        875,
+        437,
+        852,
+        358,
+        850,
+        279,
+        856,
+        212,
+        868,
+        132
+      ],
+      "Description": [],
+      "Door": {
+        "To": "Field",
+        "Player": [
+          800,
+          350
+        ]
+      }
+    },
+    {
+      "Name": "River-To-Forest",
+      "Area": [
+        5,
+        75,
+        42,
+        75,
+        79,
+        95,
+        90,
+        204,
+        102,
+        254,
+        105,
+        292,
+        105,
+        372,
+        100,
+        409,
+        73,
+        434,
+        27,
+        454,
+        9,
+        459,
+        3,
+        339,
+        6,
+        180,
+        5,
+        75
+      ],
+      "Description": [],
+      "Door": {
+        "To": "Forest",
+        "Player": [
+          857,
+          413
+        ]
+      }
+    },
+    {
+      "Texture": "cave.png",
+      "Name": "Layer Group",
+      "Position": [
+        595,
+        563
+      ]
+    },
+    {
+      "Texture": "sheet4.png",
+      "Name": "sheet4",
+      "Position": [
+        839,
+        449
+      ]
+    },
+    {
+      "Texture": "trunkplant.png",
+      "Name": "trunkplant",
+      "Position": [
+        423,
+        404
+      ]
+    },
+    {
+      "Name": "Field-To-River",
+      "Area": [
+        852,
+        30,
+        897,
+        20,
+        940,
+        21,
+        958,
+        47,
+        957,
+        140,
+        956,
+        227,
+        956,
+        274,
+        953,
+        304,
+        948,
+        322,
+        933,
+        330,
+        904,
+        330,
+        870,
+        333,
+        844,
+        321,
+        842,
+        252,
+        841,
+        174,
+        839,
+        123,
+        843,
+        87,
+        845,
+        62,
+        852,
+        30
+      ],
+      "Description": [],
+      "Door": {
+        "To": "River",
+        "Player": [
+          829,
+          316
+        ]
+      }
+    },
+    {
+      "Texture": "book.png",
+      "Name": "book",
+      "Description": [
+        "My Book of Spells!\nThe squirrel doesn't let me take it.",
+        "¡Mi libro de hechizos!\nLa ardilla no me deja cogerlo"
+      ],
+      "Position": [
+        329,
+        445
+      ]
     }
   ],
   "Scenes": [
@@ -586,10 +972,11 @@
         "fire",
         "sheet0",
         "cave-exit",
-        "Baston"
+        "baston"
       ],
       "Foreground": "caveinside-foreground.png",
-      "Music": "WoodLand"
+      "Music": "Cave",
+      "CutScene": "Intro"
     },
     {
       "Name": "Cave Outside",
@@ -730,7 +1117,366 @@
         "sheet1",
         "cave-enter"
       ],
-      "Foreground": "cave-foreground.png"
+      "Foreground": "cave-foreground.png",
+      "Music": "WoodLand"
+    },
+    {
+      "Name": "Forest",
+      "Background": "forest.png",
+      "WalkArea": [
+        352,
+        532,
+        402,
+        528,
+        455,
+        526,
+        488,
+        502,
+        507,
+        473,
+        528,
+        458,
+        550,
+        447,
+        576,
+        437,
+        601,
+        436,
+        618,
+        426,
+        636,
+        422,
+        659,
+        423,
+        708,
+        422,
+        739,
+        423,
+        775,
+        424,
+        797,
+        424,
+        825,
+        439,
+        851,
+        450,
+        882,
+        460,
+        917,
+        469,
+        949,
+        478,
+        961,
+        462,
+        956,
+        425,
+        955,
+        396,
+        948,
+        382,
+        937,
+        381,
+        916,
+        381,
+        882,
+        384,
+        857,
+        386,
+        819,
+        383,
+        783,
+        388,
+        756,
+        385,
+        723,
+        385,
+        694,
+        385,
+        660,
+        384,
+        615,
+        387,
+        572,
+        388,
+        536,
+        391,
+        517,
+        400,
+        500,
+        409,
+        483,
+        411,
+        454,
+        417,
+        420,
+        420,
+        387,
+        421,
+        364,
+        415,
+        347,
+        410,
+        330,
+        405,
+        290,
+        402,
+        205,
+        395,
+        128,
+        391,
+        101,
+        381,
+        65,
+        377,
+        39,
+        376,
+        7,
+        367,
+        8,
+        392,
+        16,
+        436,
+        9,
+        487,
+        16,
+        522,
+        43,
+        533,
+        93,
+        535,
+        132,
+        532,
+        182,
+        529,
+        237,
+        530,
+        274,
+        532,
+        319,
+        534,
+        352,
+        532
+      ],
+      "Objects": [
+        "To-Cave",
+        "To-River",
+        "trunk",
+        "sheet2",
+        "flowers"
+      ],
+      "Foreground": "forest-foreground.png",
+      "Player": {
+        "Size": 1.2
+      },
+      "Music": "WoodLand"
+    },
+    {
+      "Name": "River",
+      "Background": "river.png",
+      "WalkArea": [
+        16,
+        224,
+        73,
+        231,
+        108,
+        228,
+        166,
+        238,
+        199,
+        250,
+        215,
+        267,
+        246,
+        306,
+        263,
+        312,
+        277,
+        311,
+        304,
+        312,
+        329,
+        309,
+        357,
+        312,
+        373,
+        313,
+        388,
+        328,
+        391,
+        353,
+        374,
+        360,
+        349,
+        360,
+        292,
+        358,
+        254,
+        359,
+        216,
+        358,
+        180,
+        361,
+        143,
+        370,
+        106,
+        387,
+        81,
+        386,
+        38,
+        390,
+        15,
+        386,
+        12,
+        274,
+        16,
+        224
+      ],
+      "Objects": [
+        "River-To-Forest",
+        "To-Field",
+        "sheet3",
+        "undergrowth"
+      ],
+      "Obstacles": [],
+      "Foreground": "river-foreground.png"
+    },
+    {
+      "Name": "Field",
+      "Background": "field.png",
+      "WalkArea": [
+        12,
+        351,
+        65,
+        343,
+        135,
+        340,
+        182,
+        332,
+        237,
+        322,
+        305,
+        313,
+        332,
+        313,
+        364,
+        304,
+        409,
+        305,
+        446,
+        299,
+        470,
+        298,
+        509,
+        298,
+        548,
+        294,
+        596,
+        286,
+        643,
+        286,
+        703,
+        286,
+        743,
+        281,
+        799,
+        277,
+        833,
+        275,
+        854,
+        275,
+        852,
+        286,
+        864,
+        288,
+        885,
+        290,
+        909,
+        290,
+        922,
+        298,
+        916,
+        330,
+        913,
+        355,
+        911,
+        390,
+        890,
+        411,
+        877,
+        434,
+        849,
+        451,
+        818,
+        463,
+        815,
+        480,
+        827,
+        488,
+        850,
+        496,
+        870,
+        504,
+        891,
+        519,
+        864,
+        532,
+        835,
+        531,
+        794,
+        532,
+        758,
+        526,
+        716,
+        529,
+        679,
+        532,
+        610,
+        538,
+        568,
+        535,
+        503,
+        536,
+        469,
+        530,
+        429,
+        533,
+        381,
+        536,
+        335,
+        537,
+        307,
+        533,
+        277,
+        535,
+        238,
+        531,
+        182,
+        536,
+        75,
+        535,
+        11,
+        527,
+        11,
+        427,
+        9,
+        389,
+        12,
+        351
+      ],
+      "Objects": [
+        "sheet4",
+        "Field-To-River",
+        "trunkplant",
+        "book"
+      ],
+      "Foreground": "field-foreground.png",
+      "Characters": [
+        "Squirrel"
+      ],
+      "Player": {
+        "Size": 1.4
+      },
+      "Music": "Squirrel"
     }
   ],
   "Puzzles": [
@@ -748,7 +1494,155 @@
       },
       "Say": [
         "Done... What happened?"
-      ]
+      ],
+      "Sound": {
+        "Name": "Water",
+        "Sprite": "Splash"
+      }
+    },
+    {
+      "Name": "forestPath",
+      "Add": {
+        "Object": {
+          "Name": "Cave-To-Forest",
+          "Scene": "Cave Outside"
+        }
+      }
+    },
+    {
+      "Name": "remove-undergrowth",
+      "Remove": {
+        "Object": "undergrowth"
+      },
+      "Modify": {
+        "Scene": {
+          "Name": "River",
+          "WalkArea": [
+            32,
+            219,
+            71,
+            224,
+            117,
+            226,
+            156,
+            234,
+            191,
+            249,
+            236,
+            276,
+            259,
+            290,
+            280,
+            296,
+            301,
+            306,
+            331,
+            312,
+            383,
+            308,
+            433,
+            310,
+            496,
+            309,
+            566,
+            307,
+            610,
+            311,
+            635,
+            313,
+            661,
+            313,
+            691,
+            313,
+            725,
+            311,
+            775,
+            292,
+            807,
+            277,
+            835,
+            260,
+            846,
+            249,
+            871,
+            244,
+            896,
+            239,
+            917,
+            232,
+            945,
+            229,
+            954,
+            239,
+            951,
+            310,
+            957,
+            338,
+            946,
+            364,
+            907,
+            350,
+            881,
+            345,
+            857,
+            346,
+            813,
+            350,
+            768,
+            348,
+            712,
+            350,
+            644,
+            353,
+            591,
+            357,
+            535,
+            356,
+            472,
+            353,
+            434,
+            353,
+            399,
+            358,
+            339,
+            358,
+            300,
+            359,
+            259,
+            357,
+            225,
+            350,
+            183,
+            351,
+            156,
+            352,
+            113,
+            363,
+            71,
+            373,
+            36,
+            382,
+            11,
+            379,
+            3,
+            254,
+            32,
+            219
+          ]
+        }
+      }
+    },
+    {
+      "Name": "takeBook",
+      "Modify": {
+        "Object": {
+          "Name": "book",
+          "Take": true,
+          "Description": [
+            "It's my book of spells"
+          ]
+        }
+      }
     }
   ],
   "Sources": {
@@ -760,8 +1654,18 @@
       "NPC": "data/characters/"
     },
     "Images": [
+      "cave.png",
+      "cave-foreground.png",
+      "caveinside.png",
+      "caveinside-foreground.png",
+      "field.png",
+      "field-foreground.png",
+      "forest.png",
+      "forest-foreground.png",
+      "river.png",
+      "river-foreground.png",
+      "title.png",
       "baston.png",
-      "baston-icon.png",
       "book.png",
       "bottle-empty.png",
       "bottle-potion.png",
@@ -785,24 +1689,21 @@
       "trunkplant.png",
       "undergrowth.png",
       "water.png",
-      "cave.png",
-      "cave-foreground.png",
-      "caveinside.png",
-      "caveinside-foreground.png",
-      "field.png",
-      "field-foreground.png",
-      "forest.png",
-      "forest-foreground.png",
-      "river.png",
-      "river-foreground.png",
-      "title.png"
+      "intro0.png",
+      "intro1.png",
+      "intro2.png"
     ],
     "Fonts": [
       "Courgette Regular",
-      "Courgette Regular Green"
+      "Courgette Regular Green",
+      "Courgette Regular Blue"
     ],
     "Audio": [
-      "Woodland Fantasy.mp3"
+      "Woodland Fantasy.mp3",
+      "FantasyOrchestralTheme.mp3",
+      "splash1.wav",
+      "The Cave.mp3",
+      "Fun_Adventure.ogg"
     ]
   },
   "Characters": [
@@ -823,13 +1724,129 @@
       "Size": 0.5,
       "Mirror": true,
       "Dialogue": "Fairy-dialog"
+    },
+    {
+      "Name": "Squirrel",
+      "Description": [
+        "Language 1"
+      ],
+      "Avatar": "squirrel-portrait.png",
+      "Texture": "data/characters/squirrel_tex.png",
+      "Json": "data/characters/squirrel_tex.json",
+      "Skeleton": "data/characters/squirrel_ske.json",
+      "Armature": "Squirrel",
+      "Position": [
+        570,
+        370
+      ],
+      "Mirror": true,
+      "Dialogue": "Squirrel-dialog",
+      "Font": {
+        "font": {
+          "name": "Courgette Regular Blue",
+          "size": 55
+        },
+        "align": "center"
+      }
     }
   ],
   "Dialogues": [
     {
       "Name": "Fairy-dialog",
-      "DefaultBranch": "undefined",
-      "Branches": []
+      "DefaultBranch": "Meet",
+      "Branches": [
+        {
+          "Name": "Meet",
+          "Choices": [
+            {
+              "Text": [
+                "Who are you?"
+              ],
+              "Answer": [
+                "I'm the fairy of this forest"
+              ],
+              "Size": 30
+            },
+            {
+              "Text": [
+                "My book of spells disappeared, can you help me?"
+              ],
+              "Answer": [
+                "I saw everything but you must solve this by yourself"
+              ],
+              "Link": "Help",
+              "Size": 30,
+              "Repeat": false
+            },
+            {
+              "Text": [
+                "Good bye"
+              ],
+              "Answer": [
+                "Good luck!"
+              ],
+              "EndDialogue": true,
+              "Size": 30
+            }
+          ]
+        },
+        {
+          "Name": "Help",
+          "Choices": [
+            {
+              "Text": [
+                "Please..."
+              ],
+              "Answer": [
+                "Nope..."
+              ],
+              "Size": 55
+            },
+            {
+              "Text": [
+                "I'll help you with any problem you have"
+              ],
+              "Answer": [
+                "Ok! You owe me one"
+              ],
+              "Link": "Meet",
+              "Puzzle": "forestPath",
+              "Size": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Squirrel-dialog",
+      "DefaultBranch": "Meet",
+      "Branches": [
+        {
+          "Name": "Meet",
+          "Choices": [
+            {
+              "Text": [
+                "What are you doing with my book?"
+              ],
+              "Answer": [
+                "Someone cut the house where I live..."
+              ],
+              "Size": 40
+            },
+            {
+              "Text": [
+                "If you give me my book, I can help you"
+              ],
+              "Answer": [
+                "Ok, take your book then..."
+              ],
+              "EndDialogue": true,
+              "Puzzle": "takeBook",
+              "Size": 30
+            }
+          ]
+        }
+      ]
     }
   ],
   "Music": [
@@ -838,6 +1855,65 @@
       "Src": "data/audio/Woodland Fantasy.mp3",
       "Folder": "data/audio/",
       "File": "Woodland Fantasy.mp3"
+    },
+    {
+      "Name": "Fantasy",
+      "Src": "data/audio/FantasyOrchestralTheme.mp3",
+      "Folder": "data/audio/",
+      "File": "FantasyOrchestralTheme.mp3"
+    },
+    {
+      "Name": "Cave",
+      "Src": "data/audio/The Cave.mp3",
+      "Folder": "data/audio/",
+      "File": "The Cave.mp3"
+    },
+    {
+      "Name": "Squirrel",
+      "Src": "data/audio/Fun_Adventure.ogg",
+      "Folder": "data/audio/",
+      "File": "Fun_Adventure.ogg"
+    }
+  ],
+  "Cutscenes": [
+    {
+      "Name": "Intro",
+      "Sequence": [
+        {
+          "Image": "intro0.png",
+          "Text": [
+            "The magician had a long journey home, so he decided to rest in a cave.",
+            "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
+          ],
+          "Time": 5,
+          "Music": "Fantasy"
+        },
+        {
+          "Image": "intro1.png",
+          "Text": [
+            "When he was sleeping his 'Book of spells' disappeared...",
+            "Mientras dormía su \"Libro de hechizos\" desapareció"
+          ],
+          "Time": 5
+        }
+      ]
+    }
+  ],
+  "Sounds": [
+    {
+      "Name": "Water",
+      "Src": "data/audio/splash1.wav",
+      "Folder": "data/audio/",
+      "File": "splash1.wav",
+      "Sprites": [
+        {
+          "key": "Splash",
+          "value": [
+            0,
+            1000
+          ]
+        }
+      ]
     }
   ]
 }
