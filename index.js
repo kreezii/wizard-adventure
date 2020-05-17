@@ -9,6 +9,7 @@ var config={
   files:[
     //Add the path to the atlas JSONs files, the fonts and the JSON generated with the JSGAM Editor
     'data/imgs/spritesheet.json',
+    'data/imgs/jsgam-logo.png', //You can access to this source with the name of the file withouth the extension: jsgam-logo
     'data/cutscenes/cutscenes.json',
     'data/backgrounds/backgrounds.json',
     'data/fonts/courgette.fnt',

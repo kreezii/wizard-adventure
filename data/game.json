@@ -27,6 +27,13 @@
           "size": 55
         },
         "align": "center"
+      },
+      "Credits": {
+        "font": {
+          "name": "Courgette Regular",
+          "size": 45
+        },
+        "align": "center"
       }
     },
     "TitleScreen": {
@@ -40,7 +47,10 @@
       "Background": "inventory-background.png",
       "Icon": "inventory-icon.png",
       "Border": 10
-    }
+    },
+    "Logos": [
+      "jsgam-logo"
+    ]
   },
   "Texts": {
     "Title": [
@@ -396,11 +406,7 @@
         500
       ],
       "Take": true,
-      "Icon": "baston-icon.png",
-      "Combine": {
-        "With": "sheet3",
-        "Puzzle": "Take-Index-Page"
-      }
+      "Icon": "baston-icon.png"
     },
     {
       "Name": "Cave-To-Forest",
@@ -610,9 +616,13 @@
         506
       ],
       "Description": [
-        "It's the index page of my book of spells.\nI cannot take it.",
+        "It's the index page of my book of spells.I cannot take it.",
         "Es el índice de mi libro de hechizos.\nNo puedo cogerlo."
-      ]
+      ],
+      "Combine": {
+        "With": "book",
+        "Puzzle": "Complete-Book"
+      }
     },
     {
       "Texture": "undergrowth.png",
@@ -802,8 +812,8 @@
       "Texture": "book.png",
       "Name": "book",
       "Description": [
-        "My Book of Spells!\nThe squirrel doesn't let me take it.",
-        "¡Mi libro de hechizos!\nLa ardilla no me deja cogerlo"
+        "My Book of Spells! The squirrel doesn't let me take it.",
+        "¡Mi libro de hechizos! La ardilla no me deja cogerlo"
       ],
       "Position": [
         329,
@@ -818,12 +828,17 @@
       "Texture": "bottle-potion.png",
       "Name": "potion",
       "Description": [
-        "I made a potion"
+        "This potion makes the undesirable disappear",
+        "Esta poción hace desaparecer lo indeseable"
       ],
       "Position": [
         0,
         0
-      ]
+      ],
+      "Combine": {
+        "With": "undergrowth",
+        "Puzzle": "Remove-undergrowth"
+      }
     },
     {
       "Texture": "bottle-water.png",
@@ -836,22 +851,27 @@
         "It's an empty bottle. Useful to make potions",
         "Un bote vacío, útil para hacer pociones."
       ],
+      "Take": true,
       "Combine": {
-        "With": "water",
-        "Puzzle": "Fill-bottle"
-      },
-      "Take": true
+        "With": "flowers",
+        "Puzzle": "Get-Potion2"
+      }
     },
     {
       "Texture": "bottle-potion2.png",
       "Name": "potion2",
       "Description": [
-        "I made a potion"
+        "This potion regenerates things",
+        "Esta poción regenera cosas"
       ],
       "Position": [
         0,
         0
-      ]
+      ],
+      "Combine": {
+        "With": "trunkplant",
+        "Puzzle": "Finish-Game"
+      }
     }
   ],
   "Scenes": [
@@ -1221,7 +1241,7 @@
         "cave-enter"
       ],
       "Foreground": "cave-foreground.png",
-      "Music": "WoodLand"
+      "Music": "LongWay"
     },
     {
       "Name": "Forest",
@@ -1441,7 +1461,8 @@
         "undergrowth"
       ],
       "Obstacles": [],
-      "Foreground": "river-foreground.png"
+      "Foreground": "river-foreground.png",
+      "Music": "Fantasy"
     },
     {
       "Name": "Field",
@@ -1511,14 +1532,14 @@
         "Field-To-River",
         "trunkplant",
         "book",
-        "bottle-empty"
+        "bottle-water2"
       ],
       "Foreground": "field-foreground.png",
       "Characters": [
         "Squirrel"
       ],
       "Player": {
-        "Size": 1.4
+        "Size": 1.2
       },
       "Music": "Squirrel"
     }
@@ -1675,7 +1696,8 @@
             219
           ]
         }
-      }
+      },
+      "Resolve": "Enable-Index-Page"
     },
     {
       "Name": "Take-Book",
@@ -1816,10 +1838,23 @@
             351
           ]
         }
-      }
+      },
+      "Resolve": "Enable-Take-Book"
     },
     {
-      "Name": "Take-Index-Page"
+      "Name": "Enable-Index-Page",
+      "Modify": {
+        "Object": {
+          "Name": "sheet3",
+          "Combine": {
+            "With": "book",
+            "Puzzle": "Complete-Book"
+          },
+          "Description": [
+            "The index of my book of spells"
+          ]
+        }
+      }
     },
     {
       "Name": "Complete-Book",
@@ -1828,9 +1863,16 @@
           "Name": "bottle-water2",
           "Combine": {
             "With": "flowers",
-            "Puzzle": "Fill-bottle"
+            "Puzzle": "Get-Potion2"
           }
         }
+      },
+      "Say": [
+        "Aha! I must make a potion with flowers to repair the tree",
+        "¡Eso es! Debo hacer una poción con flores para reparar el árbol"
+      ],
+      "Remove": {
+        "Object": "sheet3"
       }
     },
     {
@@ -1840,6 +1882,40 @@
       },
       "Remove": {
         "Object": "bottle-water"
+      }
+    },
+    {
+      "Name": "Take-Index-Page",
+      "Add": {
+        "Inventory": "sheet3"
+      }
+    },
+    {
+      "Name": "Get-Potion2",
+      "Add": {
+        "Inventory": "potion2"
+      },
+      "Remove": {
+        "Object": "bottle-water2"
+      }
+    },
+    {
+      "Name": "Finish-Game",
+      "EndGame": {
+        "CutScene": "Ending"
+      }
+    },
+    {
+      "Name": "Enable-Take-Book",
+      "Modify": {
+        "Object": {
+          "Name": "book",
+          "Description": [
+            "My book of spells",
+            "My libro de hechizos"
+          ],
+          "Take": true
+        }
       }
     }
   ],
@@ -1890,7 +1966,9 @@
       "intro0.png",
       "intro1.png",
       "intro2.png",
-      "baston-icon.png"
+      "baston-icon.png",
+      "ending.png",
+      "jsgam-logo"
     ],
     "Fonts": [
       "Courgette Regular",
@@ -1902,52 +1980,123 @@
       "FantasyOrchestralTheme.mp3",
       "splash1.wav",
       "The Cave.mp3",
-      "Fun_Adventure.ogg",
-      "Title Music.mp3"
+      "Title Music.mp3",
+      "A Long Way From Home.mp3",
+      "Mabel Crystal.mp3",
+      "Ambient.mp3"
     ]
   },
-  "Characters": [
+  "Music": [
     {
-      "Name": "Fairy",
-      "Description": [
-        "What's doing a fairy here?"
-      ],
-      "Avatar": "fairy-portrait.png",
-      "Texture": "data/characters/fairy_tex.png",
-      "Json": "data/characters/fairy_tex.json",
-      "Skeleton": "data/characters/fairy_ske.json",
-      "Armature": "Fairy",
-      "Position": [
-        280,
-        380
-      ],
-      "Size": 0.5,
-      "Mirror": true,
-      "Dialogue": "Fairy-dialog"
+      "Name": "WoodLand",
+      "Src": "data/audio/Woodland Fantasy.mp3",
+      "Folder": "data/audio/",
+      "File": "Woodland Fantasy.mp3"
+    },
+    {
+      "Name": "Fantasy",
+      "Src": "data/audio/FantasyOrchestralTheme.mp3",
+      "Folder": "data/audio/",
+      "File": "FantasyOrchestralTheme.mp3"
+    },
+    {
+      "Name": "Cave",
+      "Src": "data/audio/The Cave.mp3",
+      "Folder": "data/audio/",
+      "File": "The Cave.mp3"
     },
     {
       "Name": "Squirrel",
-      "Description": [
-        "Language 1"
-      ],
-      "Avatar": "squirrel-portrait.png",
-      "Texture": "data/characters/squirrel_tex.png",
-      "Json": "data/characters/squirrel_tex.json",
-      "Skeleton": "data/characters/squirrel_ske.json",
-      "Armature": "Squirrel",
-      "Position": [
-        570,
-        370
-      ],
-      "Mirror": true,
-      "Dialogue": "Squirrel-dialog",
-      "Font": {
-        "font": {
-          "name": "Courgette Regular Blue",
-          "size": 55
+      "Src": "data/audio/Mabel Crystal.mp3",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.mp3"
+    },
+    {
+      "Name": "LongWay",
+      "Src": "data/audio/A Long Way From Home.mp3",
+      "Folder": "data/audio/",
+      "File": "A Long Way From Home.mp3"
+    },
+    {
+      "Name": "Title",
+      "Src": "data/audio/Title Music.mp3",
+      "Folder": "data/audio/",
+      "File": "Title Music.mp3"
+    },
+    {
+      "Name": "Mabel",
+      "Src": "data/audio/Mabel Crystal.mp3",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.mp3"
+    },
+    {
+      "Name": "Ending-Theme",
+      "Src": "data/audio/Ambient.mp3",
+      "Folder": "data/audio/",
+      "File": "Ambient.mp3"
+    }
+  ],
+  "Cutscenes": [
+    {
+      "Name": "Intro",
+      "Sequence": [
+        {
+          "Image": "intro0.png",
+          "Text": [
+            "The magician had a long journey home, so he decided to rest in a cave.",
+            "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
+          ],
+          "Time": 5,
+          "Music": "Fantasy"
         },
-        "align": "center"
-      }
+        {
+          "Image": "intro1.png",
+          "Text": [
+            "When he was sleeping his 'Book of spells' disappeared...",
+            "Mientras dormía su \"Libro de hechizos\" desapareció"
+          ],
+          "Time": 5
+        },
+        {
+          "Image": "intro2.png",
+          "Text": [
+            "When he woke up his adventure to find his book started...",
+            "Cuando se despertó su aventura para encontrar el libro comenzó..."
+          ],
+          "Time": 5
+        }
+      ]
+    },
+    {
+      "Name": "Ending",
+      "Sequence": [
+        {
+          "Image": "ending.png",
+          "Text": [
+            "The squirrel recovered her house and the wizard his book.\nTHE END",
+            "La ardilla recuperó su casa y el mago su libro.\nFIN"
+          ],
+          "Time": 10,
+          "Music": "Ending-Theme"
+        }
+      ]
+    }
+  ],
+  "Sounds": [
+    {
+      "Name": "Water",
+      "Src": "data/audio/splash1.wav",
+      "Folder": "data/audio/",
+      "File": "splash1.wav",
+      "Sprites": [
+        {
+          "key": "Splash",
+          "value": [
+            0,
+            1000
+          ]
+        }
+      ]
     }
   ],
   "Dialogues": [
@@ -2040,20 +2189,22 @@
                 "¿Qué estás haciendo con mi libro?"
               ],
               "Answer": [
-                "Someone cut the house where I live...\nI wanted to repair it",
-                "Alguien ha cortado el árbol donde vivo...\nQuiero repararlo"
+                "Someone cut the house where I live... I wanted to fix it and I didn't want to disturb you while you were sleeping",
+                "Alguien ha cortado el árbol donde vivo... Quería repararlo por mí misma y no quería molestarte mientras dormías"
               ],
               "Size": 30
             },
             {
               "Text": [
-                "If you give me my book, I can help you"
+                "I can help you but I need my book",
+                "Puedo ayudarte pero necesito mi libro"
               ],
               "Answer": [
-                "Ok, take your book then..."
+                "Ok, take your book then...",
+                "Vale, entonces coge tu libro..."
               ],
               "EndDialogue": true,
-              "Puzzle": "Fill-bottle",
+              "Puzzle": "Book-WalkArea",
               "Size": 30
             }
           ]
@@ -2061,85 +2212,53 @@
       ]
     }
   ],
-  "Music": [
+  "Characters": [
     {
-      "Name": "WoodLand",
-      "Src": "data/audio/Woodland Fantasy.mp3",
-      "Folder": "data/audio/",
-      "File": "Woodland Fantasy.mp3"
-    },
-    {
-      "Name": "Fantasy",
-      "Src": "data/audio/FantasyOrchestralTheme.mp3",
-      "Folder": "data/audio/",
-      "File": "FantasyOrchestralTheme.mp3"
-    },
-    {
-      "Name": "Cave",
-      "Src": "data/audio/The Cave.mp3",
-      "Folder": "data/audio/",
-      "File": "The Cave.mp3"
+      "Name": "Fairy",
+      "Description": [
+        "Language 1"
+      ],
+      "Avatar": "fairy-portrait.png",
+      "Texture": "data/characters/fairy_tex.png",
+      "Json": "data/characters/fairy_tex.json",
+      "Skeleton": "data/characters/fairy_ske.json",
+      "Armature": "Fairy",
+      "Position": [
+        270,
+        395
+      ],
+      "Font": {
+        "font": {
+          "name": "Courgette Regular Green",
+          "size": 50
+        },
+        "align": "center"
+      },
+      "Dialogue": "Fairy-dialog",
+      "Size": 0.5
     },
     {
       "Name": "Squirrel",
-      "Src": "data/audio/Fun_Adventure.ogg",
-      "Folder": "data/audio/",
-      "File": "Fun_Adventure.ogg"
-    },
-    {
-      "Name": "Title",
-      "Src": "data/audio/Title Music.mp3",
-      "Folder": "data/audio/",
-      "File": "Title Music.mp3"
-    }
-  ],
-  "Cutscenes": [
-    {
-      "Name": "Intro",
-      "Sequence": [
-        {
-          "Image": "intro0.png",
-          "Text": [
-            "The magician had a long journey home, so he decided to rest in a cave.",
-            "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
-          ],
-          "Time": 5,
-          "Music": "Fantasy"
+      "Description": [
+        "Language 1"
+      ],
+      "Avatar": "squirrel-portrait.png",
+      "Texture": "data/characters/squirrel_tex.png",
+      "Json": "data/characters/squirrel_tex.json",
+      "Skeleton": "data/characters/squirrel_ske.json",
+      "Armature": "Squirrel",
+      "Position": [
+        610,
+        350
+      ],
+      "Dialogue": "Squirrel-dialog",
+      "Font": {
+        "font": {
+          "name": "Courgette Regular Blue",
+          "size": 55
         },
-        {
-          "Image": "intro1.png",
-          "Text": [
-            "When he was sleeping his 'Book of spells' disappeared...",
-            "Mientras dormía su \"Libro de hechizos\" desapareció"
-          ],
-          "Time": 5
-        },
-        {
-          "Image": "intro2.png",
-          "Text": [
-            "In the morning ",
-            "Mientras dormía su \"Libro de hechizos\" desapareció"
-          ],
-          "Time": 5
-        }
-      ]
-    }
-  ],
-  "Sounds": [
-    {
-      "Name": "Water",
-      "Src": "data/audio/splash1.wav",
-      "Folder": "data/audio/",
-      "File": "splash1.wav",
-      "Sprites": [
-        {
-          "key": "Splash",
-          "value": [
-            0,
-            1000
-          ]
-        }
-      ]
+        "align": "center"
+      }
     }
   ]
 }

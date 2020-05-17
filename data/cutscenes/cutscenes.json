@@ -1,6 +1,6 @@
 {
 	"frames": {
-		"intro0.png": {
+		"ending.png": {
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -20,7 +20,7 @@
 				"h": 540
 			}
 		},
-		"intro1.png": {
+		"intro0.png": {
 			"frame": {
 				"x": 1,
 				"y": 543,
@@ -40,10 +40,30 @@
 				"h": 540
 			}
 		},
-		"intro2.png": {
+		"intro1.png": {
 			"frame": {
 				"x": 963,
 				"y": 1,
+				"w": 960,
+				"h": 540
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 960,
+				"h": 540
+			},
+			"sourceSize": {
+				"w": 960,
+				"h": 540
+			}
+		},
+		"intro2.png": {
+			"frame": {
+				"x": 963,
+				"y": 543,
 				"w": 960,
 				"h": 540
 			},
