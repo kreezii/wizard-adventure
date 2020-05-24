@@ -129,7 +129,8 @@
         "With": "water",
         "Puzzle": "Fill-bottle"
       },
-      "Take": true
+      "Take": true,
+      "Animation": "take"
     },
     {
       "Texture": "mushrooms.png",
@@ -172,7 +173,8 @@
       "Layer": "Bottom",
       "Take": true,
       "Description": [
-        "It's the page 10 of my book of spells"
+        "It's the page 10 of my book of spells",
+        "Es la página 10 de mi libro de hechizos"
       ]
     },
     {
@@ -250,14 +252,16 @@
         320
       ],
       "Description": [
-        "Goes outside"
+        "Goes outside",
+        "Sale de la cueva"
       ],
       "Door": {
         "To": "Cave Outside",
         "Player": [
           390,
           315
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -269,7 +273,8 @@
       ],
       "Layer": "Bottom",
       "Description": [
-        "Water is the basic component to make a potion"
+        "Water is the basic component to make a potion",
+        "El agua es el componente básico para hacer pociones"
       ],
       "Lock": true
     },
@@ -295,7 +300,8 @@
         536
       ],
       "Description": [
-        "It's the page 27 of my book of spells"
+        "It's the page 27 of my book of spells",
+        "Es la página 27 de mi libro de hechizos"
       ],
       "Layer": "Bottom",
       "Take": true
@@ -388,7 +394,8 @@
       "Texture": "bottle-water.png",
       "Name": "bottle-water",
       "Description": [
-        "There is water inside"
+        "There is water inside",
+        "Hay agua dentro"
       ],
       "Combine": {
         "With": "mushrooms",
@@ -399,14 +406,16 @@
       "Texture": "baston.png",
       "Name": "baston",
       "Description": [
-        "A stick"
+        "A stick",
+        "Un bastón"
       ],
       "Position": [
         700,
         500
       ],
       "Take": true,
-      "Icon": "baston-icon.png"
+      "Icon": "baston-icon.png",
+      "Animation": "take"
     },
     {
       "Name": "Cave-To-Forest",
@@ -524,7 +533,8 @@
         "Player": [
           138,
           310
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -562,7 +572,8 @@
         "Player": [
           800,
           455
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -677,7 +688,8 @@
         "Player": [
           800,
           350
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -721,7 +733,8 @@
         "Player": [
           857,
           413
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -805,7 +818,8 @@
         "Player": [
           829,
           316
-        ]
+        ],
+        "NoLook": true
       }
     },
     {
@@ -838,7 +852,8 @@
       "Combine": {
         "With": "undergrowth",
         "Puzzle": "Remove-undergrowth"
-      }
+      },
+      "Animation": "use"
     },
     {
       "Texture": "bottle-water.png",
@@ -855,7 +870,8 @@
       "Combine": {
         "With": "flowers",
         "Puzzle": "Get-Potion2"
-      }
+      },
+      "Animation": "use"
     },
     {
       "Texture": "bottle-potion2.png",
@@ -871,7 +887,8 @@
       "Combine": {
         "With": "trunkplant",
         "Puzzle": "Finish-Game"
-      }
+      },
+      "Animation": "use"
     }
   ],
   "Scenes": [
@@ -1353,8 +1370,6 @@
         377,
         39,
         376,
-        7,
-        367,
         8,
         392,
         16,
@@ -1468,64 +1483,124 @@
       "Name": "Field",
       "Background": "field.png",
       "WalkArea": [
-        924,
-        279,
-        887,
-        287,
-        854,
-        287,
-        835,
-        278,
-        816,
-        271,
-        790,
-        270,
-        762,
-        278,
-        705,
+        25,
+        355,
+        65,
+        343,
+        135,
+        340,
+        182,
+        332,
+        237,
+        322,
+        305,
+        313,
+        332,
+        313,
+        364,
+        304,
+        409,
+        305,
+        446,
+        299,
+        470,
+        298,
+        509,
+        298,
+        548,
+        294,
+        596,
+        286,
+        643,
+        286,
+        703,
+        286,
+        743,
         281,
-        632,
-        293,
-        579,
-        301,
-        550,
-        321,
-        525,
-        358,
-        521,
-        398,
-        528,
-        434,
-        517,
-        467,
-        514,
-        497,
-        489,
-        521,
-        493,
-        533,
-        523,
-        536,
-        601,
-        530,
-        653,
-        533,
-        724,
-        528,
-        798,
-        529,
-        815,
-        485,
-        836,
-        441,
-        879,
-        432,
+        799,
+        277,
+        825,
+        275,
+        840,
+        278,
+        852,
+        286,
+        864,
+        288,
+        885,
+        290,
         901,
-        400,
-        919,
-        362,
-        924,
-        325
+        291,
+        910,
+        298,
+        916,
+        311,
+        917,
+        329,
+        911,
+        390,
+        890,
+        411,
+        877,
+        434,
+        849,
+        451,
+        818,
+        463,
+        815,
+        480,
+        827,
+        488,
+        850,
+        496,
+        870,
+        504,
+        891,
+        519,
+        864,
+        532,
+        835,
+        531,
+        794,
+        532,
+        758,
+        526,
+        716,
+        529,
+        679,
+        532,
+        610,
+        538,
+        568,
+        535,
+        503,
+        536,
+        469,
+        530,
+        429,
+        533,
+        381,
+        536,
+        335,
+        537,
+        307,
+        533,
+        277,
+        535,
+        238,
+        531,
+        182,
+        536,
+        75,
+        535,
+        11,
+        527,
+        11,
+        427,
+        9,
+        389,
+        25,
+        355
       ],
       "Objects": [
         "sheet4",
@@ -1697,7 +1772,7 @@
           ]
         }
       },
-      "Resolve": "Enable-Index-Page"
+      "Resolve": "Enable-Take-Index-Page"
     },
     {
       "Name": "Take-Book",
@@ -1842,19 +1917,17 @@
       "Resolve": "Enable-Take-Book"
     },
     {
-      "Name": "Enable-Index-Page",
+      "Name": "Enable-Take-Index-Page",
       "Modify": {
         "Object": {
-          "Name": "sheet3",
+          "Name": "baston",
           "Combine": {
-            "With": "book",
-            "Puzzle": "Complete-Book"
-          },
-          "Description": [
-            "The index of my book of spells"
-          ]
+            "With": "sheet3",
+            "Puzzle": "Take-Index-Page"
+          }
         }
-      }
+      },
+      "Resolve": "Mod-Index-Desc"
     },
     {
       "Name": "Complete-Book",
@@ -1917,10 +1990,23 @@
           "Take": true
         }
       }
+    },
+    {
+      "Name": "Mod-Index-Desc",
+      "Modify": {
+        "Object": {
+          "Name": "sheet3",
+          "Description": [
+            "It's the index page of my book of spells.",
+            "Es el índice de mi libro de hechizos."
+          ]
+        }
+      }
     }
   ],
   "Sources": {
     "Filename": "game",
+    "Version": 0.2,
     "Folders": {
       "Main": "data/",
       "Audio": "data/audio/",
