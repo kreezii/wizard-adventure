@@ -1,0 +1,75 @@
+{
+	"frames": {
+		"fullscreenIcon.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 100,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 100,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		},
+		"jsgam-logo.png": {
+			"frame": {
+				"x": 103,
+				"y": 1,
+				"w": 300,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 300,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 300,
+				"h": 300
+			}
+		},
+		"soundIcon.png": {
+			"frame": {
+				"x": 405,
+				"y": 1,
+				"w": 100,
+				"h": 100
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 100,
+				"h": 100
+			},
+			"sourceSize": {
+				"w": 100,
+				"h": 100
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "ui.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 506,
+			"h": 302
+		},
+		"scale": "1"
+	}
+}

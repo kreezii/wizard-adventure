@@ -4,12 +4,14 @@ var jsgam=window.jsgam.default;
 var config={
   width:960, //Must be the same the image backgrounds
   height:540, //Must be the same the image backgrounds
+  muteSound:true,
+  //id:"myId",
   //autoResize:false
   //parent:'layerInMyWebpage';
   files:[
     //Add the path to the atlas JSONs files, the fonts and the JSON generated with the JSGAM Editor
     'data/imgs/spritesheet.json',
-    'data/imgs/jsgam-logo.png', //You can access to this source with the name of the file withouth the extension: jsgam-logo
+    'data/imgs/ui.json',
     'data/cutscenes/cutscenes.json',
     'data/backgrounds/backgrounds.json',
     'data/fonts/courgette.fnt',

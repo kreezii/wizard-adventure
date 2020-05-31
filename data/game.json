@@ -30,8 +30,15 @@
       },
       "Credits": {
         "font": {
-          "name": "Courgette Regular",
-          "size": 45
+          "name": "Courgette Regular Blue",
+          "size": 30
+        },
+        "align": "center"
+      },
+      "Help": {
+        "font": {
+          "name": "Courgette Regular Green",
+          "size": 35
         },
         "align": "center"
       }
@@ -49,8 +56,18 @@
       "Border": 10
     },
     "Logos": [
-      "jsgam-logo"
-    ]
+      "jsgam-logo.png"
+    ],
+    "Options": {
+      "Sound": {
+        "Icon": "soundIcon.png",
+        "Position": "bottom-left"
+      },
+      "Fullscreen": {
+        "Icon": "fullscreenIcon.png",
+        "Position": "bottom-right"
+      }
+    }
   },
   "Texts": {
     "Title": [
@@ -488,7 +505,8 @@
       ],
       "Take": true,
       "Description": [
-        "It's the page 117 of my book of spells"
+        "It's the page 117 of my book of spells",
+        "Es la página 117 de mi libro de hechizos"
       ],
       "Layer": "Bottom"
     },
@@ -866,11 +884,11 @@
         "It's an empty bottle. Useful to make potions",
         "Un bote vacío, útil para hacer pociones."
       ],
-      "Take": true,
       "Combine": {
         "With": "flowers",
         "Puzzle": "Get-Potion2"
       },
+      "Take": true,
       "Animation": "use"
     },
     {
@@ -1471,7 +1489,6 @@
       ],
       "Objects": [
         "River-To-Forest",
-        "To-Field",
         "sheet3",
         "undergrowth"
       ],
@@ -2001,12 +2018,22 @@
             "Es el índice de mi libro de hechizos."
           ]
         }
+      },
+      "Resolve": "Add-Door-Field"
+    },
+    {
+      "Name": "Add-Door-Field",
+      "Add": {
+        "Object": {
+          "Name": "To-Field",
+          "Scene": "River"
+        }
       }
     }
   ],
   "Sources": {
     "Filename": "game",
-    "Version": 0.2,
+    "Version": 0.3,
     "Folders": {
       "Main": "data/",
       "Audio": "data/audio/",
@@ -2054,7 +2081,9 @@
       "intro2.png",
       "baston-icon.png",
       "ending.png",
-      "jsgam-logo"
+      "jsgam-logo.png",
+      "fullscreenIcon.png",
+      "soundIcon.png"
     ],
     "Fonts": [
       "Courgette Regular",
@@ -2062,127 +2091,63 @@
       "Courgette Regular Blue"
     ],
     "Audio": [
-      "Woodland Fantasy.mp3",
-      "FantasyOrchestralTheme.mp3",
+      "Woodland Fantasy.opus",
+      "FantasyOrchestralTheme.opus",
       "splash1.wav",
-      "The Cave.mp3",
-      "Title Music.mp3",
-      "A Long Way From Home.mp3",
-      "Mabel Crystal.mp3",
-      "Ambient.mp3"
+      "The Cave.opus",
+      "Title Music.opus",
+      "A Long Way From Home.opus",
+      "Mabel Crystal.opus",
+      "Ambient.opus"
     ]
   },
-  "Music": [
+  "Characters": [
     {
-      "Name": "WoodLand",
-      "Src": "data/audio/Woodland Fantasy.mp3",
-      "Folder": "data/audio/",
-      "File": "Woodland Fantasy.mp3"
-    },
-    {
-      "Name": "Fantasy",
-      "Src": "data/audio/FantasyOrchestralTheme.mp3",
-      "Folder": "data/audio/",
-      "File": "FantasyOrchestralTheme.mp3"
-    },
-    {
-      "Name": "Cave",
-      "Src": "data/audio/The Cave.mp3",
-      "Folder": "data/audio/",
-      "File": "The Cave.mp3"
+      "Name": "Fairy",
+      "Description": [
+        "Language 1"
+      ],
+      "Avatar": "fairy-portrait.png",
+      "Texture": "data/characters/fairy_tex.png",
+      "Json": "data/characters/fairy_tex.json",
+      "Skeleton": "data/characters/fairy_ske.json",
+      "Armature": "Fairy",
+      "Position": [
+        270,
+        395
+      ],
+      "Size": 0.5,
+      "Dialogue": "Fairy-dialog",
+      "Font": {
+        "font": {
+          "name": "Courgette Regular Green",
+          "size": 50
+        },
+        "align": "center"
+      }
     },
     {
       "Name": "Squirrel",
-      "Src": "data/audio/Mabel Crystal.mp3",
-      "Folder": "data/audio/",
-      "File": "Mabel Crystal.mp3"
-    },
-    {
-      "Name": "LongWay",
-      "Src": "data/audio/A Long Way From Home.mp3",
-      "Folder": "data/audio/",
-      "File": "A Long Way From Home.mp3"
-    },
-    {
-      "Name": "Title",
-      "Src": "data/audio/Title Music.mp3",
-      "Folder": "data/audio/",
-      "File": "Title Music.mp3"
-    },
-    {
-      "Name": "Mabel",
-      "Src": "data/audio/Mabel Crystal.mp3",
-      "Folder": "data/audio/",
-      "File": "Mabel Crystal.mp3"
-    },
-    {
-      "Name": "Ending-Theme",
-      "Src": "data/audio/Ambient.mp3",
-      "Folder": "data/audio/",
-      "File": "Ambient.mp3"
-    }
-  ],
-  "Cutscenes": [
-    {
-      "Name": "Intro",
-      "Sequence": [
-        {
-          "Image": "intro0.png",
-          "Text": [
-            "The magician had a long journey home, so he decided to rest in a cave.",
-            "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
-          ],
-          "Time": 5,
-          "Music": "Fantasy"
+      "Description": [
+        "Language 1"
+      ],
+      "Avatar": "squirrel-portrait.png",
+      "Texture": "data/characters/squirrel_tex.png",
+      "Json": "data/characters/squirrel_tex.json",
+      "Skeleton": "data/characters/squirrel_ske.json",
+      "Armature": "Squirrel",
+      "Position": [
+        610,
+        350
+      ],
+      "Dialogue": "Squirrel-dialog",
+      "Font": {
+        "font": {
+          "name": "Courgette Regular Blue",
+          "size": 55
         },
-        {
-          "Image": "intro1.png",
-          "Text": [
-            "When he was sleeping his 'Book of spells' disappeared...",
-            "Mientras dormía su \"Libro de hechizos\" desapareció"
-          ],
-          "Time": 5
-        },
-        {
-          "Image": "intro2.png",
-          "Text": [
-            "When he woke up his adventure to find his book started...",
-            "Cuando se despertó su aventura para encontrar el libro comenzó..."
-          ],
-          "Time": 5
-        }
-      ]
-    },
-    {
-      "Name": "Ending",
-      "Sequence": [
-        {
-          "Image": "ending.png",
-          "Text": [
-            "The squirrel recovered her house and the wizard his book.\nTHE END",
-            "La ardilla recuperó su casa y el mago su libro.\nFIN"
-          ],
-          "Time": 10,
-          "Music": "Ending-Theme"
-        }
-      ]
-    }
-  ],
-  "Sounds": [
-    {
-      "Name": "Water",
-      "Src": "data/audio/splash1.wav",
-      "Folder": "data/audio/",
-      "File": "splash1.wav",
-      "Sprites": [
-        {
-          "key": "Splash",
-          "value": [
-            0,
-            1000
-          ]
-        }
-      ]
+        "align": "center"
+      }
     }
   ],
   "Dialogues": [
@@ -2298,53 +2263,157 @@
       ]
     }
   ],
-  "Characters": [
+  "Music": [
     {
-      "Name": "Fairy",
-      "Description": [
-        "Language 1"
-      ],
-      "Avatar": "fairy-portrait.png",
-      "Texture": "data/characters/fairy_tex.png",
-      "Json": "data/characters/fairy_tex.json",
-      "Skeleton": "data/characters/fairy_ske.json",
-      "Armature": "Fairy",
-      "Position": [
-        270,
-        395
-      ],
-      "Font": {
-        "font": {
-          "name": "Courgette Regular Green",
-          "size": 50
-        },
-        "align": "center"
-      },
-      "Dialogue": "Fairy-dialog",
-      "Size": 0.5
+      "Name": "WoodLand",
+      "Src": "data/audio/Woodland Fantasy.opus",
+      "Folder": "data/audio/",
+      "File": "Woodland Fantasy.opus"
+    },
+    {
+      "Name": "Fantasy",
+      "Src": "data/audio/FantasyOrchestralTheme.opus",
+      "Folder": "data/audio/",
+      "File": "FantasyOrchestralTheme.opus"
+    },
+    {
+      "Name": "Cave",
+      "Src": "data/audio/The Cave.opus",
+      "Folder": "data/audio/",
+      "File": "The Cave.opus"
     },
     {
       "Name": "Squirrel",
-      "Description": [
-        "Language 1"
-      ],
-      "Avatar": "squirrel-portrait.png",
-      "Texture": "data/characters/squirrel_tex.png",
-      "Json": "data/characters/squirrel_tex.json",
-      "Skeleton": "data/characters/squirrel_ske.json",
-      "Armature": "Squirrel",
-      "Position": [
-        610,
-        350
-      ],
-      "Dialogue": "Squirrel-dialog",
-      "Font": {
-        "font": {
-          "name": "Courgette Regular Blue",
-          "size": 55
-        },
-        "align": "center"
-      }
+      "Src": "data/audio/Mabel Crystal.opus",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.opus"
+    },
+    {
+      "Name": "LongWay",
+      "Src": "data/audio/A Long Way From Home.opus",
+      "Folder": "data/audio/",
+      "File": "A Long Way From Home.opus"
+    },
+    {
+      "Name": "Title",
+      "Src": "data/audio/Title Music.opus",
+      "Folder": "data/audio/",
+      "File": "Title Music.opus"
+    },
+    {
+      "Name": "Mabel",
+      "Src": "data/audio/Mabel Crystal.opus",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.opus"
+    },
+    {
+      "Name": "Ending-Theme",
+      "Src": "data/audio/Ambient.opus",
+      "Folder": "data/audio/",
+      "File": "Ambient.opus"
     }
-  ]
+  ],
+  "Cutscenes": [
+    {
+      "Name": "Intro",
+      "Sequence": [
+        {
+          "Image": "intro0.png",
+          "Text": [
+            "The magician had a long journey home, so he decided to rest in a cave.",
+            "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
+          ],
+          "Time": 5,
+          "Music": "Fantasy"
+        },
+        {
+          "Image": "intro1.png",
+          "Text": [
+            "When he was sleeping his 'Book of spells' disappeared...",
+            "Mientras dormía su \"Libro de hechizos\" desapareció"
+          ],
+          "Time": 5
+        },
+        {
+          "Image": "intro2.png",
+          "Text": [
+            "When he woke up his adventure to find his book started...",
+            "Cuando se despertó su aventura para encontrar el libro comenzó..."
+          ],
+          "Time": 5
+        }
+      ]
+    },
+    {
+      "Name": "Ending",
+      "Sequence": [
+        {
+          "Image": "ending.png",
+          "Text": [
+            "The squirrel recovered her house and the wizard his book.\nTHE END",
+            "La ardilla recuperó su casa y el mago su libro.\nFIN"
+          ],
+          "Time": 10,
+          "Music": "Ending-Theme"
+        }
+      ]
+    }
+  ],
+  "Sounds": [
+    {
+      "Name": "Water",
+      "Src": "data/audio/splash1.wav",
+      "Folder": "data/audio/",
+      "File": "splash1.wav",
+      "Sprites": [
+        {
+          "key": "Splash",
+          "value": [
+            0,
+            1000
+          ]
+        }
+      ]
+    }
+  ],
+  "Help": [
+    [
+      "Look: Touch or click on a object or a character",
+      "Take: Drag the object onto the inventory icon",
+      "Combine: Drag one object onto another one",
+      "Use: Right mouse click or long press",
+      "Talk: Right mouse click or long press over a character"
+    ],
+    [
+      "Look: Touch or click on a object or a character",
+      "Take: Drag the object onto the inventory icon",
+      "Combine: Drag one object onto another one",
+      "Use: Right mouse click or long press",
+      "Talk: Right mouse click or long press over a character"
+    ]
+  ],
+  "Credits": {
+    "Lines": [
+      {
+        "Title": [
+          "Story",
+          "Historia"
+        ],
+        "Text": [
+          "R.Vañes"
+        ]
+      },
+      {
+        "Title": [
+          "Graphics",
+          "Gráficos"
+        ],
+        "Text": [
+          "Freepik",
+          "Opengameart",
+          "R.Vañes"
+        ]
+      }
+    ]
+  }
 }
