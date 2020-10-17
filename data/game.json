@@ -6,40 +6,30 @@
     ],
     "Text": {
       "Style": {
-        "font": {
-          "name": "Courgette Regular",
-          "size": 55
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 55,
         "align": "center"
       },
       "Button": {
-        "font": {
-          "name": "Courgette Regular",
-          "size": 65
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 65,
         "align": "center"
       },
       "Position": "bottom",
       "Size": "fourth",
       "Title": {
-        "font": {
-          "name": "Courgette Regular Green",
-          "size": 55
-        },
+        "fontName": "Courgette Regular Green",
+        "fontSize": 55,
         "align": "center"
       },
       "Credits": {
-        "font": {
-          "name": "Courgette Regular Blue",
-          "size": 30
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 30,
         "align": "center"
       },
       "Help": {
-        "font": {
-          "name": "Courgette Regular Green",
-          "size": 35
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 35,
         "align": "center"
       }
     },
@@ -53,20 +43,21 @@
       "Position": "top-right",
       "Background": "inventory-background.png",
       "Icon": "inventory-icon.png",
-      "Border": 10
+      "Border": [
+        10,
+        0
+      ]
     },
     "Logos": [
       "jsgam-logo.png"
     ],
     "Options": {
-      "Sound": {
-        "Icon": "soundIcon.png",
-        "Position": "bottom-left"
-      },
-      "Fullscreen": {
-        "Icon": "fullscreenIcon.png",
-        "Position": "bottom-right"
-      }
+      "Icon": "optionsIcon.png",
+      "Position": "top-left",
+      "Sound": "soundIcon.png",
+      "Fullscreen": "fullscreenIcon.png",
+      "Home": "homeIcon.png",
+      "Mute": "mutesoundIcon.png"
     }
   },
   "Texts": {
@@ -169,16 +160,16 @@
     {
       "Texture": "fire.png",
       "Name": "fire",
+      "Description": [
+        "It was a cold night",
+        "Ha sido una noche fría"
+      ],
+      "Lock": true,
       "Position": [
         468,
         539
       ],
-      "Layer": "Bottom",
-      "Lock": true,
-      "Description": [
-        "It was a cold night",
-        "Ha sido una noche fría"
-      ]
+      "Layer": "Bottom"
     },
     {
       "Texture": "sheet0.png",
@@ -187,12 +178,12 @@
         395,
         418
       ],
-      "Layer": "Bottom",
-      "Take": true,
       "Description": [
         "It's the page 10 of my book of spells",
         "Es la página 10 de mi libro de hechizos"
-      ]
+      ],
+      "Take": true,
+      "Layer": "Bottom"
     },
     {
       "Name": "cave-exit",
@@ -422,15 +413,15 @@
     {
       "Texture": "baston.png",
       "Name": "baston",
-      "Description": [
-        "A stick",
-        "Un bastón"
-      ],
       "Position": [
         700,
         500
       ],
       "Take": true,
+      "Description": [
+        "A stick",
+        "Un bastón"
+      ],
       "Icon": "baston-icon.png",
       "Animation": "take"
     },
@@ -489,12 +480,12 @@
         435,
         426
       ],
-      "Layer": "Bottom",
       "Description": [
         "Beautiful flowers",
         "Unas flores preciosas"
       ],
-      "Lock": true
+      "Lock": true,
+      "Layer": "Bottom"
     },
     {
       "Texture": "sheet2.png",
@@ -503,11 +494,11 @@
         414,
         497
       ],
-      "Take": true,
       "Description": [
         "It's the page 117 of my book of spells",
         "Es la página 117 de mi libro de hechizos"
       ],
+      "Take": true,
       "Layer": "Bottom"
     },
     {
@@ -1065,6 +1056,17 @@
         50,
         537
       ],
+      "Foreground": "caveinside-foreground.png",
+      "Objects": [
+        "bottle-empty",
+        "bottle-empty",
+        "mushrooms",
+        "fire",
+        "sheet0",
+        "cave-exit",
+        "baston"
+      ],
+      "Music": "Cave",
       "Obstacles": [
         [
           364,
@@ -1123,17 +1125,6 @@
           461
         ]
       ],
-      "Objects": [
-        "bottle-empty",
-        "bottle-empty",
-        "mushrooms",
-        "fire",
-        "sheet0",
-        "cave-exit",
-        "baston"
-      ],
-      "Foreground": "caveinside-foreground.png",
-      "Music": "Cave",
       "CutScene": "Intro"
     },
     {
@@ -1269,13 +1260,13 @@
         153,
         402
       ],
+      "Foreground": "cave-foreground.png",
       "Objects": [
         "water",
         "food",
         "sheet1",
         "cave-enter"
       ],
-      "Foreground": "cave-foreground.png",
       "Music": "LongWay"
     },
     {
@@ -2033,7 +2024,7 @@
   ],
   "Sources": {
     "Filename": "game",
-    "Version": 0.3,
+    "Version": 0.4,
     "Folders": {
       "Main": "data/",
       "Audio": "data/audio/",
@@ -2041,49 +2032,52 @@
       "NPC": "data/characters/"
     },
     "Images": [
-      "cave.png",
-      "cave-foreground.png",
-      "caveinside.png",
-      "caveinside-foreground.png",
-      "field.png",
-      "field-foreground.png",
-      "forest.png",
-      "forest-foreground.png",
-      "river.png",
-      "river-foreground.png",
-      "title.png",
+      "baston-icon.png",
       "baston.png",
       "book.png",
       "bottle-empty.png",
       "bottle-potion.png",
       "bottle-potion2.png",
       "bottle-water.png",
+      "cave-foreground.png",
+      "cave.png",
+      "caveinside-foreground.png",
+      "caveinside.png",
+      "ending.png",
       "fairy-portrait.png",
+      "field-foreground.png",
+      "field.png",
       "fire.png",
       "flowers.png",
       "food.png",
+      "forest-foreground.png",
+      "forest.png",
+      "fullscreenIcon.png",
+      "homeIcon.png",
+      "intro0.png",
+      "intro1.png",
+      "intro2.png",
       "inventory-background.png",
       "inventory-icon.png",
+      "jsgam-logo.png",
       "mushrooms.png",
+      "mutesoundIcon.png",
+      "optionsIcon.png",
       "player-portrait.png",
+      "river-foreground.png",
+      "river.png",
       "sheet0.png",
       "sheet1.png",
       "sheet2.png",
       "sheet3.png",
       "sheet4.png",
+      "soundIcon.png",
       "squirrel-portrait.png",
+      "title.png",
       "treehouse.png",
       "trunkplant.png",
       "undergrowth.png",
-      "water.png",
-      "intro0.png",
-      "intro1.png",
-      "intro2.png",
-      "baston-icon.png",
-      "ending.png",
-      "jsgam-logo.png",
-      "fullscreenIcon.png",
-      "soundIcon.png"
+      "water.png"
     ],
     "Fonts": [
       "Courgette Regular",
@@ -2116,15 +2110,13 @@
         270,
         395
       ],
-      "Size": 0.5,
       "Dialogue": "Fairy-dialog",
       "Font": {
-        "font": {
-          "name": "Courgette Regular Green",
-          "size": 50
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 55,
         "align": "center"
-      }
+      },
+      "Size": 0.5
     },
     {
       "Name": "Squirrel",
@@ -2142,12 +2134,60 @@
       ],
       "Dialogue": "Squirrel-dialog",
       "Font": {
-        "font": {
-          "name": "Courgette Regular Blue",
-          "size": 55
-        },
+        "fontName": "Courgette Regular",
+        "fontSize": 55,
         "align": "center"
       }
+    }
+  ],
+  "Music": [
+    {
+      "Name": "WoodLand",
+      "Src": "data/audio/Woodland Fantasy.opus",
+      "Folder": "data/audio/",
+      "File": "Woodland Fantasy.opus"
+    },
+    {
+      "Name": "Fantasy",
+      "Src": "data/audio/FantasyOrchestralTheme.opus",
+      "Folder": "data/audio/",
+      "File": "FantasyOrchestralTheme.opus"
+    },
+    {
+      "Name": "Cave",
+      "Src": "data/audio/The Cave.opus",
+      "Folder": "data/audio/",
+      "File": "The Cave.opus"
+    },
+    {
+      "Name": "Squirrel",
+      "Src": "data/audio/Mabel Crystal.opus",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.opus"
+    },
+    {
+      "Name": "LongWay",
+      "Src": "data/audio/A Long Way From Home.opus",
+      "Folder": "data/audio/",
+      "File": "A Long Way From Home.opus"
+    },
+    {
+      "Name": "Title",
+      "Src": "data/audio/Title Music.opus",
+      "Folder": "data/audio/",
+      "File": "Title Music.opus"
+    },
+    {
+      "Name": "Mabel",
+      "Src": "data/audio/Mabel Crystal.opus",
+      "Folder": "data/audio/",
+      "File": "Mabel Crystal.opus"
+    },
+    {
+      "Name": "Ending-Theme",
+      "Src": "data/audio/Ambient.opus",
+      "Folder": "data/audio/",
+      "File": "Ambient.opus"
     }
   ],
   "Dialogues": [
@@ -2263,56 +2303,30 @@
       ]
     }
   ],
-  "Music": [
-    {
-      "Name": "WoodLand",
-      "Src": "data/audio/Woodland Fantasy.opus",
-      "Folder": "data/audio/",
-      "File": "Woodland Fantasy.opus"
-    },
-    {
-      "Name": "Fantasy",
-      "Src": "data/audio/FantasyOrchestralTheme.opus",
-      "Folder": "data/audio/",
-      "File": "FantasyOrchestralTheme.opus"
-    },
-    {
-      "Name": "Cave",
-      "Src": "data/audio/The Cave.opus",
-      "Folder": "data/audio/",
-      "File": "The Cave.opus"
-    },
-    {
-      "Name": "Squirrel",
-      "Src": "data/audio/Mabel Crystal.opus",
-      "Folder": "data/audio/",
-      "File": "Mabel Crystal.opus"
-    },
-    {
-      "Name": "LongWay",
-      "Src": "data/audio/A Long Way From Home.opus",
-      "Folder": "data/audio/",
-      "File": "A Long Way From Home.opus"
-    },
-    {
-      "Name": "Title",
-      "Src": "data/audio/Title Music.opus",
-      "Folder": "data/audio/",
-      "File": "Title Music.opus"
-    },
-    {
-      "Name": "Mabel",
-      "Src": "data/audio/Mabel Crystal.opus",
-      "Folder": "data/audio/",
-      "File": "Mabel Crystal.opus"
-    },
-    {
-      "Name": "Ending-Theme",
-      "Src": "data/audio/Ambient.opus",
-      "Folder": "data/audio/",
-      "File": "Ambient.opus"
-    }
-  ],
+  "Credits": {
+    "Lines": [
+      {
+        "Title": [
+          "Story",
+          "Historia"
+        ],
+        "Text": [
+          "R.Vañes"
+        ]
+      },
+      {
+        "Title": [
+          "Graphics",
+          "Gráficos"
+        ],
+        "Text": [
+          "Freepik",
+          "Opengameart",
+          "R.Vañes"
+        ]
+      }
+    ]
+  },
   "Cutscenes": [
     {
       "Name": "Intro",
@@ -2324,7 +2338,8 @@
             "El mago tenía un largo viaje hacia su casa, así que decidió descansar en una cueva."
           ],
           "Time": 5,
-          "Music": "Fantasy"
+          "Music": "Fantasy",
+          "Position": "Center"
         },
         {
           "Image": "intro1.png",
@@ -2332,7 +2347,8 @@
             "When he was sleeping his 'Book of spells' disappeared...",
             "Mientras dormía su \"Libro de hechizos\" desapareció"
           ],
-          "Time": 5
+          "Time": 5,
+          "Position": "Center"
         },
         {
           "Image": "intro2.png",
@@ -2340,7 +2356,8 @@
             "When he woke up his adventure to find his book started...",
             "Cuando se despertó su aventura para encontrar el libro comenzó..."
           ],
-          "Time": 5
+          "Time": 5,
+          "Position": "Center"
         }
       ]
     },
@@ -2391,29 +2408,5 @@
       "Use: Right mouse click or long press",
       "Talk: Right mouse click or long press over a character"
     ]
-  ],
-  "Credits": {
-    "Lines": [
-      {
-        "Title": [
-          "Story",
-          "Historia"
-        ],
-        "Text": [
-          "R.Vañes"
-        ]
-      },
-      {
-        "Title": [
-          "Graphics",
-          "Gráficos"
-        ],
-        "Text": [
-          "Freepik",
-          "Opengameart",
-          "R.Vañes"
-        ]
-      }
-    ]
-  }
+  ]
 }
